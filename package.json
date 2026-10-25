@@ -34,6 +34,10 @@
       "default": "./lib/index.mjs"
     },
     "./package.json": "./package.json",
+    "./lib/createPlugin.mjs": {
+      "types": "./lib/createPlugin.d.mts",
+      "default": "./lib/createPlugin.mjs"
+    },
     "./lib/utils/*": "./lib/utils/*"
   },
   "bin": {
@@ -42,6 +46,7 @@
   "files": [
     "bin/**/*.mjs",
     "lib/**/*.mjs",
+    "lib/createPlugin.d.mts",
     "!**/__tests__/**",
     "!lib/testUtils/**",
     "!lib/rules/*/README.md",
